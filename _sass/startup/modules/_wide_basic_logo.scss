@@ -1,0 +1,12 @@
+.wide_basic_logo{
+    color: $point-color;
+    font-size: 50px;
+    font-family: $header-font;
+    position: fixed;
+    top: $wide-top - 13px;
+    left: $wide-left;
+    z-index: 55;
+    @media screen and (max-width: $middle-width) {
+        display: none;
+    }
+}

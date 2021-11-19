@@ -1,0 +1,44 @@
+
+@media screen and (max-width: $middle-width) {
+    body.default{
+        background-image: url('/assets/images/brand_body_background.png');
+        background-size: cover;
+        background-position: top;
+        .left_section,
+        .right_section{
+            display: none;
+        }
+        .center_section{
+            min-width: 100vw;
+            width: 100vw;
+            .brand_contents{
+                .brand_bar{
+                    display: none;
+                }
+                .circular_rotation_logo{
+                    display: none;
+                }
+                .contents{
+                    height: 100vh;
+                    max-height: 100vh;
+                    text-align: start;
+                    .contents-en:first-child{
+                        margin-top: 150px;
+                    }
+                    .contents-kr:last-child{
+                        margin-bottom: 150px;
+                    }
+                    @media screen and (max-width: $narrow-width){
+                        .contents-en,
+                        .contents-kr{
+                            font-size: 17px;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}

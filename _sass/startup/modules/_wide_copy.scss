@@ -1,0 +1,13 @@
+.wide_copy{
+    position: fixed;
+    color: $base-color;
+    font-size: 12px;
+    font-family: $sub-font;
+    bottom: $wide-bottom;
+    left: $wide-left;
+    line-height: 150%;
+    z-index: 55;
+    @media screen and (max-width: $middle-width) {
+        display: none;
+    }
+}

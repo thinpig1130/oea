@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ "/assets/css/lookbook.css" | relative_url }}">
+
+<hr class="left_line">
+<hr class="right_line">
+
+    <div class="main_images">
+        <a href="{{ '/lookbook_detail' | relative_url }}">       
+            <div>
+                <img class="images" src="/assets/images/sample.png">
+            </div>
+        </a>
+    </div>
+</a>
+
+<div class="lookbook_contents">
+    <div class="item_list">
+         <div class="item">
+            <div class="number">01</div>
+            <div class="name">INSTRAP STORY</div>
+        </div>
+    </div>
+</div>
+
+
+{{ content }}
+
+<script>
+    let itemList = [];
+    {% for item in site.data.items %}
+        itemList.push({number:"{{ item.number }}", name: "{{ item.name }}", img: "{{ item.img }}", link: "{{ item.link }}"});
+    {% endfor %}
+</script>
+
+<script src="{{ '/assets/js/' | relative_url }}lookbook.js"></script>

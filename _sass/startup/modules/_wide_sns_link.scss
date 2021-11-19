@@ -1,0 +1,19 @@
+.wide_sns_link{
+    position: fixed;
+    bottom: $wide-bottom;
+    right: $wide-right;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    z-index: 55;
+    .icon{
+        height: 18px;
+    }
+    @media screen and (max-width: $wide-width) {
+        left: $wide-left;
+        bottom: $wide-bottom * 2;
+    }
+    @media screen and (max-width: $middle-width) {
+        display: none;
+    }
+}

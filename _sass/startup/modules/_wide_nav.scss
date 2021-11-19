@@ -1,0 +1,25 @@
+.wide_nav{
+    color: $base-color;
+    font-family: $header-font;
+    font-size: 15px;
+    position: fixed;
+    top: $wide-top;
+    right: $wide-right;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    z-index: 55;
+    .icon.selected{
+        color: $point-color;
+    }
+
+    @media screen and (max-width: $wide-width) {
+        left: $wide-left;
+        top: $wide-top * 3;
+        flex-direction: column;
+        height: 130px;
+    }
+    @media screen and (max-width: $middle-width) {
+        display: none;
+    }    
+}

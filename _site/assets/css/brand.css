@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@font-face { font-family: 'mont-heavy'; src: url("/assets/font/Mont-HeavyDEMO.otf") format("opentype"); }
+
+@font-face { font-family: 'mont-light'; src: url("/assets/font/Mont-ExtraLightDEMO.otf") format("opentype"); }
+
+@font-face { font-family: 'open-sans-bold'; src: url("/assets/font/OpenSans-Bold.ttf"); }
+
+@font-face { font-family: 'noto-sans-cjk-kr'; src: url("/assets/font/NotoSansCJKkr-Bold.otf"); }
+
+/* wide: computer mode  */
+/* 화면 변환 기준 */
+@keyframes round { from { transform: none; }
+  to { transform: rotate(1turn); } }
+
+.circular_rotation_logo { position: relative; display: flex; justify-content: center; align-items: center; width: 223px; height: 223px; margin: 20px; }
+
+.circular_rotation_logo .core { position: absolute; width: 129px; }
+
+.circular_rotation_logo .ling { position: absolute; width: 223px; animation: round 6s linear infinite; }
+
+@media screen and (max-width: 900px) { body.default { background-image: url("/assets/images/brand_body_background.png"); background-size: cover; background-position: top; } body.default .left_section, body.default .right_section { display: none; } body.default .center_section { min-width: 100vw; width: 100vw; } body.default .center_section .brand_contents .brand_bar { display: none; } body.default .center_section .brand_contents .circular_rotation_logo { display: none; } body.default .center_section .brand_contents .contents { height: 100vh; max-height: 100vh; text-align: start; } body.default .center_section .brand_contents .contents .contents-en:first-child { margin-top: 150px; } body.default .center_section .brand_contents .contents .contents-kr:last-child { margin-bottom: 150px; } }
+
+@media screen and (max-width: 900px) and (max-width: 700px) { body.default .center_section .brand_contents .contents .contents-en, body.default .center_section .brand_contents .contents .contents-kr { font-size: 17px; } }
+
+.center_section { display: flex; justify-content: center; align-items: center; }
+
+.brand_contents { width: 100%; color: #CCCCCC; line-height: 180%; position: relative; max-height: 100vh; display: flex; flex-direction: column; align-items: center; color: #CCCCCC; }
+
+.brand_contents img.brand_bar { margin-top: 40px; width: 100%; }
+
+.brand_contents .circular_rotation_logo { width: 300px; height: 300px; margin: 50px 0px; }
+
+.brand_contents .circular_rotation_logo .core { width: 129px; }
+
+.brand_contents .circular_rotation_logo .ling { width: 222px; }
+
+.brand_contents .contents { overflow: hidden; min-height: 200px; height: 100%; max-height: 50vh; overflow-y: scroll; text-align: center; }
+
+.brand_contents .contents::-webkit-scrollbar { display: none; }
+
+.brand_contents .contents-en { font-size: 19px; font-family: open-sans-bold; margin-bottom: 30px; }
+
+.brand_contents .contents-kr { font-size: 19px; font-family: noto-sans-cjk-kr; margin-bottom: 50px; }
+
+.brand_contents .contents-arrow { color: #00FFA2; font-family: open-sans-bold; margin-bottom: 40px; }
+
+.brand_contents .contents-arrow .arrow { width: 18px; margin: 0px 1px; }
+
+/*# sourceMappingURL=brand.css.map */

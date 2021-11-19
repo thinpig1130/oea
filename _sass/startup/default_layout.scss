@@ -1,0 +1,60 @@
+@import
+  "startup/base",             // Defines element resets.
+  "startup/modules/wide_basic_logo",
+  "startup/modules/wide_copy",
+  "startup/modules/wide_nav",
+  "startup/modules/wide_sns_link",
+  "startup/modules/narrow_nav_icon",
+  "startup/modules/narrow_nav_screen"
+;
+
+body.default{
+  display: flex;
+  justify-content: space-between;
+  min-height: fit-content;
+
+  .left_section{
+    width: 33%;
+    min-width: 350px;
+    background-image: url('/assets/images/background_side_y_l.png');
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    @media screen and (max-width: $middle-width) {
+      min-width: 18vw;
+      width: 18vw;
+    }
+    @media screen and (max-width: $narrow-width) {
+      min-width: 20vw;
+      width: 20vw;
+    }
+  }
+  .center_section{
+    width: 34% ;
+    min-width: 460px;
+    min-height: 100vh;
+    @media screen and (max-width: $middle-width) {
+      min-width: 64vw;
+      width: 64vw;
+    }
+    @media screen and (max-width: $narrow-width) {
+      min-width: 60vw;
+      width: 60vw;
+    }
+  }
+  .right_section{
+    width: 33%;
+    background-image: url('/assets/images/background_side_y_r.png');
+    background-size: cover;
+    position: relative;
+    @media screen and (max-width: $middle-width) {
+      min-width: 18vw;
+      width: 18vw;
+    }
+    @media screen and (max-width: $narrow-width) {
+      min-width: 20vw;
+      width: 20vw;
+    }
+    
+  }
+}

@@ -1,0 +1,26 @@
+
+@media screen and (max-width: $middle-width) {
+    body.default{
+        background-image: url('/assets/images/contact_body_background.png');
+        background-size: cover;
+        background-position: top;
+        .left_section,
+        .right_section{
+            display: none;
+        }
+        .center_section{
+            min-width: 100vw;
+            width: 100vw;
+            .contact_contents{
+                bottom:0px;
+                padding: 250px 50px 50px 50px;
+                .circular_rotation_logo{
+                    display: none;
+                }
+                .label{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

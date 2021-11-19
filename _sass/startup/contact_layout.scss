@@ -1,0 +1,51 @@
+@import
+  "startup/modules/circular_rotation_logo_basic",           // 원형 회전 로고
+  "startup/modules/contact_body"
+;
+
+.center_section{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: auto;
+}
+.center_section::-webkit-scrollbar{
+  display: none;
+}
+.contact_contents{
+  width: fit-content;
+  height: fit-content;
+  color: $base-color;
+  line-height: 180%;
+  position: relative;
+  padding: 150px 80px 50px 80px;
+  margin-bottom: 100px;
+  .label{
+    font-size: 20px;
+    font-family: $sub-font;
+    margin-bottom: 20px;
+  }
+  hr{
+    width: 26px;
+    border: $base-color 1px solid;
+    margin: 50px 0px;
+    text-align: left;
+  }
+  .circular_rotation_logo{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      bottom: 0px;
+      right: 0px;
+      .core {
+          width: 88px;
+      }
+      .ling {
+          width: 152px;
+      }
+  }
+  .contents{
+      font-family: $contents-font;
+      font-size: 15px;
+  }
+}

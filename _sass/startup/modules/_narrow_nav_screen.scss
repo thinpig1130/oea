@@ -1,0 +1,83 @@
+
+.narrow_nav_screen{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(34, 33, 33, 0.2);
+    z-index: 60;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+    
+
+    .nav_close_icon{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        top: $narrow-top;
+        right: $narrow-right;
+    }
+    .nav_close_icon:hover{
+        cursor: pointer;
+    }
+
+    .nav_icon{
+        position: fixed;
+        left: $narrow-left;
+        bottom: $narrow-bottom * 4;
+        font-family: $header-font;
+        font-size: 45px;
+        color: $light-color;
+        div{
+            margin-bottom: 20px;
+        }
+        .selected{
+            color: $point-color;
+        }
+    }
+
+    .nav_line{
+        width: 100vw;
+        position: fixed;
+        padding-left: $narrow-left;
+        padding-right: $narrow-right;
+        bottom: $narrow-bottom * 3.5;
+        left:0px;
+        hr{
+            width: 100%;
+            border: $light-color solid 1px;
+        }
+    }
+
+    .sns_link{
+        position: fixed;
+        left: $narrow-left;
+        bottom: $narrow-bottom * 1.5;
+        font-family: $header-font;
+        font-size: 18px;
+        color: $point-color;
+        transition: filter 1s;
+        div>span{
+            color: $light-color;
+        }
+        hr{
+            width: 100%;
+            border: $point-color solid 1px;
+            margin: 5px 0px 7px 0px;
+        }
+
+    }
+
+    // @media screen and (max-width: $middle-width) {
+    //     display: flex;
+    // }
+}
+
+section{
+    transition: filter 1s;
+}
+
+.blur{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}

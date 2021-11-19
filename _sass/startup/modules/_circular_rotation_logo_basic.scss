@@ -1,0 +1,28 @@
+@keyframes round{
+    from{
+      transform: none;
+    }
+    to {
+      transform: rotate(1turn);
+    }
+}
+
+.circular_rotation_logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 223px;
+    height: 223px;
+    .core {
+        position: absolute;
+        width: 129px;
+    }
+    .ling {
+        position: absolute;
+        width: 223px;
+        animation: round 6s linear infinite;
+    }
+    margin: 20px;
+}
+

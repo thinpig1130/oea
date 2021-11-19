@@ -1,0 +1,17 @@
+# number : 목록 앞에 붙는 번호
+# name : 상품명 (띄어쓰기가 있을 경우 ''로 묶어줘야 함)
+# img : 대표 이미지 파일 명
+# link : 주소 창에 표시되는 link 명 (items 폴더에 있는 *.md 파일 permalink 와 동일해야 함)
+
+- number: '01'
+  name: 'INSTRAP STORY'
+  img: sample.png
+  link: instrap_story
+- number: '02'
+  name: 'ARKTIC WHITE'
+  img: bbb.png
+  link: arktic_white
+- number: '03'
+  name: 'PHANTOM BLACK'
+  img: aaa.png
+  link: phantom_black

@@ -1,0 +1,76 @@
+@import
+  "startup/modules/circular_rotation_logo_basic",           // 원형 회전 로고
+  "startup/modules/brand_body"
+
+;
+
+.center_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand_contents{
+  width: 100%;
+  color: $base-color;
+  line-height: 180%;
+  position: relative;
+  max-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $base-color;
+
+  img.brand_bar{
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .circular_rotation_logo{
+      width: 300px;
+      height: 300px;
+      margin: 50px 0px;
+      .core {
+          width: 129px;
+      }
+      .ling {
+          width: 222px;
+      }
+  }
+
+  .contents{
+    overflow: hidden;
+    min-height: 200px;
+    height: 100%;
+    max-height: 50vh;
+    overflow-y: scroll;
+    text-align: center;
+  }
+
+  .contents::-webkit-scrollbar{
+    display: none;
+  }
+
+  .contents-en{
+    font-size: 19px;
+    font-family: $sub-font;
+    margin-bottom: 30px;
+
+  }
+  .contents-kr{
+    font-size: 19px;
+    font-family: $contents-font;
+    margin-bottom: 50px;
+  }
+
+  .contents-arrow{
+    color:  $point-color;
+    font-family: $sub-font;
+    margin-bottom: 40px;
+    .arrow{
+      width: 18px;
+      margin: 0px 1px;
+    }
+  }
+}

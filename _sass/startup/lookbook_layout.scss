@@ -1,0 +1,157 @@
+.center_section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: visible;
+  
+  hr{
+    position: absolute;
+    color: $point-color;
+    border: solid 1px;
+    width: 153px;
+    scroll-snap-align: center;
+    margin-bottom: 5vh;
+    @media screen and (max-width: $middle-width) {
+      opacity: 0;
+    }
+  }
+  hr.left_line{
+    left: -175px;
+    z-index: 50;
+  }
+  hr.right_line{
+    right: -175px;
+    z-index: 50;
+  }
+  
+  .main_images{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    margin-bottom: 30px;
+    
+    div{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img{
+      width: 120%;
+      @media screen and (max-width: $middle-width) {
+        width: 130%;
+      }
+    }
+  }
+}
+.lookbook_contents::-webkit-scrollbar{
+  display: none;
+}
+.lookbook_contents{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-padding-bottom: 5vh;
+
+
+  .item_list::-webkit-scrollbar{
+    display: none;
+  }
+
+  .item_list{
+    width: 100%;
+    height: fit-content;
+
+    .item{
+      width: 100%;
+      display: flex;
+      color: $light-color;
+      font-family: $header-font;
+      margin: 5px 0px;
+
+      .number{
+        z-index:19;
+        padding: 6px 6px 0px 0px ;
+        font-size: 10px;
+        @media screen and (max-width: $middle-width) {
+          padding-top: 3px;
+        }
+      }
+      .name{
+        z-index:19;
+        font-size: 70px;
+        @media screen and (max-width: 1900px) {
+          font-size: 65px;
+        }
+        @media screen and (max-width: 1750px) {
+          font-size: 60px;
+        }
+        @media screen and (max-width: 1620px) {
+          font-size: 58px;
+        }
+        @media screen and (max-width: 1570px) {
+          font-size: 55px;
+        }
+        @media screen and (max-width: 1490px) {
+          font-size: 53px;
+        }
+        @media screen and (max-width: 1440px) {
+          font-size: 51px;
+        }
+        @media screen and (max-width: 1400px) {
+          font-size: 48px;
+        }
+        @media screen and (max-width: $middle-width) {
+          font-size: 52px;
+        }
+        @media screen and (max-width: ($narrow-width + (50px))) {
+          font-size: 48px;
+        }
+        @media screen and (max-width: $narrow-width) {
+          font-size: 41px;
+        }
+        @media screen and (max-width: ($narrow-width - (25px))) {
+          font-size: 38px;
+        }
+        @media screen and (max-width: ($narrow-width - (105px))) {
+          font-size: 36px;
+        }
+        @media screen and (max-width: ($narrow-width - (115px))) {
+          font-size: 34px;
+        }
+        @media screen and (max-width: ($narrow-width - (165px))) {
+          font-size: 32px;
+        }
+        @media screen and (max-width: ($narrow-width - (195px))) {
+          font-size: 30px;
+        }
+        @media screen and (max-width: ($narrow-width - (225px))) {
+          font-size: 29px;
+        }
+        @media screen and (max-width: ($narrow-width - (240px))) {
+          font-size: 28px;
+        }
+      }
+    }
+    .item.active{
+      scroll-snap-align: center;
+      .number{
+        z-index: 21;
+      }
+      .name{
+        z-index: 21;
+      }
+    }
+  }
+}
+
+

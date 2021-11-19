@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "ko" }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ "/assets/css/lookbook_detail.css" | relative_url }}">
+    </head>
+  <body class="lookbook_detail">
+    <section class="top_section">
+      <div>
+        {%- include wide_basic_logo.html -%}
+        {%- include wide_nav.html -%}
+      </div>
+      <div class="page_icon_section">
+        <img class="buy_icon" src="/assets/images/buy_icon.png">
+        <img class="close_icon" src="/assets/images/close_icon.png">
+      </div>
+    </section>
+   
+    <section class="center_section">
+      <div class="item_images">
+          <img src="/assets/images/sample.png">
+          <img src="/assets/images/sample.png">
+          <img src="/assets/images/sample.png">
+          <img src="/assets/images/sample.png">
+          <img src="/assets/images/sample.png">
+          <img src="/assets/images/sample.png">
+          <img src="/assets/images/sample.png">
+      </div>
+      <div class="item_name">
+        ARKTIC WHITE
+      </div>
+      {{ content }}
+    </section>
+    <section class="bottom_section">
+      {%- include wide_copy.html -%}
+      {%- include wide_sns_link.html -%}
+    </section>
+    {%- include narrow_nav_icon.html -%}
+    {%- include narrow_nav_screen.html -%}
+  </body>
+  <script src="{{ '/assets/js/' | relative_url }}moblie_nav.js"></script>
+  <script src="{{ '/assets/js/' | relative_url }}x-scroll.js"></script>
+</html>

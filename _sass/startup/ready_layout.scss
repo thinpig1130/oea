@@ -1,0 +1,12 @@
+@import
+  "startup/base",             // Defines element resets.
+  "startup/modules/circular_rotation_logo_basic",  // 원형 회전 로고
+  "startup/modules/coming_soon"  // 커밍순
+;
+
+body{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
