@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<link rel="stylesheet" href="{{ "/assets/css/brand.css" | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/brand.css' | relative_url }}">
 
 <div class="brand_contents">
-    <img class="brand_bar" src="/assets/images/brand_bar.png">
+    <img class="brand_bar" src="{{ '/assets/images/brand_bar.png' | relative_url }}">
 
     {%- include circular_rotation_logo.html -%}
 
@@ -23,9 +23,9 @@ layout: default
         </div>
     
         <div class="contents-arrow">
-            <img class="arrow" src="/assets/images/arrow.png">
-            <img class="arrow" src="/assets/images/arrow.png">
-            <img class="arrow" src="/assets/images/arrow.png">
+            <img class="arrow" src="{{ '/assets/images/arrow.png' | relative_url }}">
+            <img class="arrow" src="{{ '/assets/images/arrow.png' | relative_url }}">
+            <img class="arrow" src="{{ '/assets/images/arrow.png' | relative_url }}">
         </div>
     
         <div class="contents-en">
@@ -42,9 +42,9 @@ layout: default
         </div>
     
         <div class="contents-arrow">
-            <img class="arrow" src="/assets/images/arrow.png">
-            <img class="arrow" src="/assets/images/arrow.png">
-            <img class="arrow" src="/assets/images/arrow.png">
+            <img class="arrow" src="{{ '/assets/images/arrow.png' | relative_url }}">
+            <img class="arrow" src="{{ '/assets/images/arrow.png' | relative_url }}">
+            <img class="arrow" src="{{ '/assets/images/arrow.png' | relative_url }}">
         </div>
     
         <div class="contents-en">
@@ -58,3 +58,5 @@ layout: default
     </div>
 </div>
 <script src="{{ '/assets/js/' | relative_url }}common_init.js"></script>
+
+"{{ '' | relative_url }}"

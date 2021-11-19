@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "ko" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'ko' }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{{ "/assets/css/lookbook_detail.css" | relative_url }}">
+        <link rel="stylesheet" href="{{ '/assets/css/lookbook_detail.css' | relative_url }}">
     </head>
   <body class="lookbook_detail">
     <section class="top_section">
@@ -20,13 +20,13 @@
    
     <section class="center_section">
       <div class="item_images">
-          <img src="/assets/images/sample.png">
-          <img src="/assets/images/sample.png">
-          <img src="/assets/images/sample.png">
-          <img src="/assets/images/sample.png">
-          <img src="/assets/images/sample.png">
-          <img src="/assets/images/sample.png">
-          <img src="/assets/images/sample.png">
+          <img src="{{ '/assets/images/sample.png' | relative_url }}">
+          <img src="{{ '/assets/images/sample.png' | relative_url }}">
+          <img src="{{ '/assets/images/sample.png' | relative_url }}">
+          <img src="{{ '/assets/images/sample.png' | relative_url }}">
+          <img src="{{ '/assets/images/sample.png' | relative_url }}">
+          <img src="{{ '/assets/images/sample.png' | relative_url }}">
+          <img src="{{ '/assets/images/sample.png' | relative_url }}">
       </div>
       <div class="item_name">
         ARKTIC WHITE
@@ -43,3 +43,4 @@
   <script src="{{ '/assets/js/' | relative_url }}moblie_nav.js"></script>
   <script src="{{ '/assets/js/' | relative_url }}x-scroll.js"></script>
 </html>
+
