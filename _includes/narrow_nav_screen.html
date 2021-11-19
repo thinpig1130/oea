@@ -1,7 +1,7 @@
 <div class="narrow_nav_screen">
     <img class="nav_close_icon" src="{{ '/assets/images/nav_close_icon.png' | relative_url }}">
     <div class="nav_icon">
-        <div class="{% if page.icon == 'lookbook' %}selected{% endif %}"><a href="{{ '' | relative_url }}">LOOKBOOK</a></div>
+        <div class="{% if page.icon == '' %}selected{% endif %}"><a href="{{ '' | relative_url }}">LOOKBOOK</a></div>
         <div><a href="">SHOP</a></div>
         <div class="{% if page.icon == 'brand' %}selected{% endif %}"><a href="{{ '/brand' | relative_url }}">BRAND</a></div>
         <div class="{% if page.icon == 'contact' %}selected{% endif %}"><a href="{{ '/contact' | relative_url }}">CONTACT</a></div>
