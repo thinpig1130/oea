@@ -192,7 +192,7 @@ function changeImg(index){
 
     // 새로운 이미지 생성
     let newImg = document.createElement("img");
-    newImg.src=`/assets/images/items/${itemList[index].img}`;
+    newImg.src=`oea/assets/images/items/${itemList[index].img}`;
     contentImgScreen.querySelector("div").appendChild(newImg);
 
     // if(preIndex < currentIndex){
