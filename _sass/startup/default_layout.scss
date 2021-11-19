@@ -13,10 +13,11 @@ body.default{
   justify-content: space-between;
   min-height: fit-content;
 
+  
   .left_section{
     width: 33%;
     min-width: 350px;
-    background-image: url('/assets/images/background_side_y_l.png');
+    background-image: url('{{ "/assets/images/background_side_y_l.png" | relative_url }}');
     background-size: cover;
     background-position: right;
     position: relative;
@@ -44,7 +45,7 @@ body.default{
   }
   .right_section{
     width: 33%;
-    background-image: url('/assets/images/background_side_y_r.png');
+    background-image: url('{{ "/assets/images/background_side_y_r.png" | relative_url }}');
     background-size: cover;
     position: relative;
     @media screen and (max-width: $middle-width) {
